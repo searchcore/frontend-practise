@@ -1,0 +1,96 @@
+.food-menu {
+	min-height: 100%;
+	height: auto;
+	background: white;
+	padding: 100px 5.5vw;
+	@media (max-width: 1360px) {
+		padding: 100px 1vw;
+	}
+	&__container {
+	}
+
+	&__title {
+		text-align: center;
+		margin-bottom: 8px;
+		font-size: 36px;
+		line-height: 48px;
+		text-transform: uppercase;
+	}
+
+	&__border {
+		height: 5px;
+		width: 60px;
+		background: #e8c300;
+		border-radius: 50px;
+		margin: 0 auto 20px auto;
+	}
+
+	&__text {
+		line-height: 28px;
+		font-size: 18px;
+		text-align: center;
+		max-width: 565px;
+		margin: 0 auto 50px auto;
+	}
+
+	&__menu {
+	}
+
+	&__categories {
+		display: flex;
+		justify-content: center;
+		max-height: 50px;
+		margin: 0 0 50px 0;
+	}
+
+	&__category {
+		border-right: 1px solid rgba(51, 51, 51, 0.2);
+		flex: 0 1 120px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		cursor: pointer;
+
+		&:last-child {
+			border: none;
+		}
+	}
+
+	&__tables {
+		display: flex;
+		height: auto;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		align-items: center;
+		@media (max-width: 1360px) {
+			justify-content: center;
+		}
+	}
+
+	&__dish {
+		text-align: left;
+		max-width: 270px;
+	}
+
+	&__cost {
+		text-align: right;
+		width: 90px;
+	}
+
+	&__subtitle {
+		color: rgba($color: #333, $alpha: 0.5);
+	}
+	&__table {
+		max-width: 390px;
+		border-spacing: 5px 0;
+		font-size: 18px;
+		line-height: 18px;
+		padding: 10px;
+		& tr {
+			vertical-align: top;
+			& td {
+				padding: 0 0 35px 0;
+			}
+		}
+	}
+}

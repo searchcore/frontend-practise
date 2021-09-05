@@ -1,0 +1,148 @@
+.events {
+	color: white;
+	background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../img/specialty-bg.webp");
+	background-size: cover;
+	background-position: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding: 0 80px;
+	min-height: 100%;
+	height: auto;
+
+	&__title {
+		flex: 0 0 100px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: auto;
+		text-align: center;
+		line-height: 14px;
+		height: 100px;
+		letter-spacing: 0.5em;
+		text-transform: uppercase;
+		&-bottom {
+			color: rgba(255, 255, 255, 0.5);
+			letter-spacing: normal;
+			text-transform: none;
+			line-height: 12px;
+			& > div {
+				height: auto;
+			}
+		}
+	}
+
+	&__container {
+		flex: 0 1 475px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	&__photo {
+		max-width: 475px;
+		max-height: 475px;
+	}
+}
+.illustration {
+	&__label {
+		position: absolute;
+		background: black;
+		height: 100%;
+		width: 80px;
+		bottom: 0px;
+		right: 0px;
+		border-radius: 0 5px 5px 0;
+		&-content {
+			position: absolute;
+			height: auto;
+			max-width: 400px;
+			width: 50vw;
+			top: 30px;
+			left: 50%;
+			font-size: 24px;
+			line-height: 12px;
+			text-transform: uppercase;
+			transform-origin: left top;
+			transform: rotate(90deg) translateY(-50%);
+			&-left {
+				top: auto;
+				bottom: 30px;
+				left: 50%;
+				transform: rotate(-90deg) translateY(-50%);
+			}
+		}
+		&-left {
+			left: 0px;
+			border-radius: 5px 0 0 5px;
+		}
+	}
+}
+@media (min-width: $bp1) {
+	.events__photo {
+		margin: 0 80px 0 0;
+		&:last-child {
+			margin: 0;
+		}
+	}
+}
+@media (max-width: 1300px) {
+	.events__photo {
+		margin: 0 40px 0 0;
+		&:last-child {
+			margin: 0;
+		}
+	}
+}
+@media (max-width: 1250px) {
+	.events__photo {
+		margin: 0 0 40px 0;
+		&:last-child {
+			margin: 0;
+		}
+	}
+	.events__container {
+		width: auto;
+		flex-direction: column;
+	}
+	.illustration__label-content {
+		font-size: 3vw;
+		&-left {
+			bottom: 3vw;
+		}
+	}
+}
+@media (max-width: $bp2) {
+	.illustration__label-content {
+		font-size: 3.7vw;
+	}
+}
+@media (max-width: $bp3) {
+	.events__photo {
+		max-width: 55vw;
+	}
+	.illustration__label {
+		width: 10vw;
+	}
+	.events {
+		padding: 0 10px;
+	}
+}
+
+#bg-event {
+	background: none;
+	position: relative;
+	&:after {
+		content: "";
+		z-index: -1;
+		position: fixed;
+		top: 0;
+		left: 0;
+		height: 100%;
+		width: 100%;
+		background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../img/specialty-bg.webp");
+		background-size: cover;
+		background-position: center;
+	}
+}

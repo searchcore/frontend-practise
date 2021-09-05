@@ -1,0 +1,363 @@
+.home-page {
+	position: relative;
+	background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../img/home/header-bg.webp");
+	background-size: cover;
+	background-position: center;
+
+	//content
+	//middle
+	&__content-container {
+		position: relative;
+		z-index: 3;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		flex-direction: column;
+	}
+	&__container {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+	}
+	&__sub-title {
+		display: block;
+		color: white;
+		line-height: 14px;
+		text-align: center;
+		letter-spacing: 0.5em;
+		text-transform: uppercase;
+	}
+	&__title {
+		display: block;
+		color: white;
+		font-size: 96px;
+		line-height: 70px;
+		text-align: center;
+	}
+
+	&__border-bottom {
+		height: 5px;
+		width: 60px;
+		background: #e8c300;
+		border-radius: 50px;
+		margin: 0 auto;
+	}
+
+	&__button {
+		cursor: pointer;
+		color: white;
+		&-container {
+			display: flex;
+			justify-content: space-between;
+		}
+	}
+	&__time-table {
+		height: auto;
+		width: auto;
+		line-height: 12px;
+		text-align: center;
+		color: #ffffff;
+	}
+	&__right-side {
+		position: relative;
+	}
+	&__social {
+		color: #ffffff;
+	}
+}
+.social {
+	&__item {
+		cursor: pointer;
+		width: 60px;
+		height: 60px;
+		border-radius: 50%;
+		border: 1px solid rgba(255, 255, 255, 0.2);
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin: 0 0 20px 0;
+		&:last-child {
+			margin: 0;
+		}
+	}
+
+	&__img {
+		max-width: 20px;
+		max-height: 20px;
+	}
+}
+.scroll-down {
+	border-radius: 50%;
+	width: 60px;
+	height: 60px;
+	border: 1px solid rgba(255, 255, 255, 0.2);
+	position: relative;
+	margin: 0 auto;
+	&__arrow {
+		cursor: pointer;
+		font-family: "Open Sans";
+		display: block;
+		position: absolute;
+		height: 40px;
+		width: 40px;
+		left: 9px;
+		top: 9px;
+		background: white url("../img/home/scroll.svg") no-repeat center;
+		border-radius: 50%;
+		transition: 0.4s;
+		&:hover {
+			content: "";
+			background: #8a8a8a url("../img/home/scroll.svg") no-repeat center;
+		}
+	}
+	&:after {
+		content: "";
+		position: absolute;
+		background: rgba(255, 255, 255, 0.2);
+		width: 1px;
+		height: 20vh;
+		bottom: -20vh;
+		left: 50%;
+	}
+	&:before {
+		content: "";
+		position: absolute;
+		background: rgba(255, 255, 255, 0.2);
+		width: 1px;
+		height: 57vh;
+		top: 0;
+		left: 50%;
+		transform-origin: left top;
+		transform: rotate(-180deg);
+	}
+}
+.steering-wheel {
+	max-height: 150px;
+	max-width: 150px;
+}
+@media (min-width: 1201px) {
+	.home-page {
+		&__steering-wheel {
+			max-height: 150px;
+			max-width: 150px;
+			margin: 25px;
+		}
+
+		&__scroll-down {
+			max-height: 140px;
+		}
+
+		&__container {
+			max-height: 250px;
+		}
+		&__center {
+			flex: 1 0 850px;
+		}
+		&__sub-title {
+			margin: 0 0 30px 0;
+		}
+
+		&__title {
+			margin: 0 0 45px 0;
+		}
+
+		&__border-bottom {
+			margin: 0 auto 30px auto;
+		}
+
+		&__button {
+			flex: 0 1 200px;
+			height: 60px;
+			&-container {
+				max-height: 60px;
+				max-width: 440px;
+				margin: 0 auto;
+			}
+			&:first-child {
+				margin: 0 40px 0 0;
+			}
+		}
+		&__left-side {
+			flex: 0 1 295px;
+			position: relative;
+		}
+		&__time-table {
+			transform-origin: top left;
+			transform: rotate(-90deg) translateX(-18px);
+			position: absolute;
+			left: 5.5vw;
+			bottom: 0px;
+			width: 260px;
+			height: auto;
+		}
+		&__right-side {
+			flex: 0 1 295px;
+		}
+		&__social {
+			position: absolute;
+			right: 80px;
+			bottom: 15px;
+			width: max-content;
+			height: auto;
+		}
+	}
+}
+@media (max-width: $bp1) and (min-width: $bp3) {
+	.home-page {
+		justify-content: center;
+		&__steering-wheel {
+			max-height: 150px;
+			max-width: 150px;
+			margin-top: 25px;
+		}
+		&__container {
+			flex-direction: column;
+		}
+		&__center {
+			height: auto;
+			flex: 0 1 auto;
+		}
+		&__sub-title {
+			margin: 0 0 30px 0;
+		}
+
+		&__title {
+			margin: 0 0 20px 0;
+			font-size: 76px;
+		}
+
+		&__border-bottom {
+			margin: 0 auto 30px auto;
+		}
+
+		&__button {
+			flex: 0 1 200px;
+			height: 60px;
+			&-container {
+				max-height: 60px;
+				max-width: 440px;
+				margin: 0 auto;
+			}
+			&:first-child {
+				margin: 0 40px 0 0;
+			}
+		}
+		&__left-side {
+			flex: 0 0 auto;
+			width: 100%;
+			height: auto;
+			padding: 20px;
+		}
+		&__right-side {
+			width: 100%;
+			height: auto;
+			flex: 0 1 auto;
+			margin: 10px 0 10px 0;
+		}
+		&__social {
+			width: 100%;
+			height: auto;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			max-width: 220px;
+			margin: 0 auto;
+		}
+		&__scroll-down {
+			max-height: 140px;
+			padding: 0px 0px 20px 0px;
+		}
+	}
+	.social {
+		&__item {
+			margin: 0;
+		}
+	}
+}
+@media (max-width: $bp3) {
+	.home-page {
+		justify-content: center;
+		&__steering-wheel {
+			max-height: 100px;
+			max-width: 100px;
+			margin-top: 10px;
+		}
+		&__time-table {
+			font-size: 3vw;
+		}
+		&__container {
+			flex-direction: column;
+		}
+		&__center {
+			height: auto;
+			flex: 0 1 auto;
+		}
+		&__sub-title {
+			margin: 0 0 20px 0;
+			font-size: 2vw;
+		}
+
+		&__title {
+			margin: 0 0 10px 0;
+			line-height: 10vw;
+			font-size: 11vw;
+		}
+
+		&__border-bottom {
+			margin: 0 auto 30px auto;
+		}
+
+		&__button {
+			flex: 0 1 200px;
+			height: 60px;
+			&-container {
+				max-height: 60px;
+				max-width: 440px;
+				margin: 0 auto;
+				padding: 0 15px;
+			}
+			&:first-child {
+				margin: 0 10px 0 0;
+			}
+		}
+		&__left-side {
+			flex: 0 0 auto;
+			width: 100%;
+			height: auto;
+			padding: 20px;
+		}
+		&__right-side {
+			width: 100%;
+			height: auto;
+			flex: 0 1 auto;
+			margin: 10px 0 10px 0;
+		}
+		&__social {
+			width: 100%;
+			height: auto;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			max-width: 220px;
+			margin: 0 auto;
+		}
+		&__scroll-down {
+			max-height: 140px;
+			padding: 0px 0px 20px 0px;
+		}
+	}
+	.social {
+		&__item {
+			margin: 0;
+		}
+	}
+}
+@media (max-height: 566px) {
+	.home-page {
+		&__steering-wheel {
+			max-height: 50px;
+			max-width: 50px;
+			margin-top: 5px;
+		}
+	}
+}

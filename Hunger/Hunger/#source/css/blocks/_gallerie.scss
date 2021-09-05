@@ -1,0 +1,30 @@
+.gallerie {
+	max-height: 360px;
+	max-width: 100%;
+	overflow: hidden;
+	&__container {
+		display: flex;
+		justify-content: space-between;
+	}
+	&__img-container {
+		flex: 1 1 auto;
+	}
+	&__img {
+		object-fit: cover;
+		object-position: center;
+	}
+}
+@media (max-width: $bp2) {
+	.gallerie {
+		max-height: none;
+		height: auto;
+	}
+	.gallerie__img {
+		max-height: 360px;
+	}
+	.gallerie__container {
+		max-height: none;
+		height: auto;
+		flex-direction: column;
+	}
+}

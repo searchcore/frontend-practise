@@ -1,0 +1,29 @@
+.our-team {
+	background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../img/team-specialty-bg.webp");
+	background-size: cover;
+	background-position: center;
+	color: white;
+
+	&__text-regular {
+		line-height: 18px;
+	}
+	&__our-team__text-bold {
+		font-weight: 400;
+	}
+}
+#bg-team {
+	background: none;
+	position: relative;
+	&:after {
+		content: "";
+		z-index: -1;
+		position: fixed;
+		top: 0;
+		left: 0;
+		height: 100%;
+		width: 100%;
+		background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../img/team-specialty-bg.webp");
+		background-size: cover;
+		background-position: center;
+	}
+}

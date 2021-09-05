@@ -1,0 +1,7 @@
+.slider {
+	display: flex;
+	transition: 0.8s ease;
+	&__slide {
+		flex: 0 0 100%;
+	}
+}

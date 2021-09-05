@@ -1,0 +1,27 @@
+//variables
+$bp1: 1200px;
+$bp2: 992px;
+$bp3: 767px;
+
+@mixin placeholder($color: white, $opacity: 1) {
+	&::-webkit-input-placeholder {
+		color: $color;
+		opacity: $opacity;
+	}
+	&:-ms-input-placeholder {
+		color: $color;
+		opacity: $opacity;
+	}
+	&::-moz-placeholder {
+		color: $color;
+		opacity: $opacity;
+	}
+	&:-moz-placeholder {
+		color: $color;
+		opacity: $opacity;
+	}
+	&:placeholder {
+		color: $color;
+		opacity: $opacity;
+	}
+}

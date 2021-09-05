@@ -1,0 +1,42 @@
+.booking {
+	background: white;
+
+	&__title {
+		text-align: center;
+		font-size: 36px;
+		line-height: 48px;
+		text-transform: uppercase;
+		margin: 0 0 20px 0;
+	}
+
+	&__border {
+		height: 5px;
+		width: 60px;
+		background: #e8c300;
+		border-radius: 50px;
+		margin: 0 auto 20px auto;
+	}
+
+	&__subtitle {
+		color: rgba(51, 51, 51, 0.5);
+		font-size: 12px;
+		letter-spacing: inherit;
+		line-height: 12px;
+	}
+}
+@media (min-width: $bp1) {
+	.booking {
+		padding: 40px 20px 20px 20px;
+		&__subtitle div {
+			margin: 20px 0 0 0;
+		}
+	}
+}
+@media (max-width: $bp1) {
+	.booking {
+		&__subtitle {
+			font-size: 14px;
+			margin: 20px 0 0 0;
+		}
+	}
+}

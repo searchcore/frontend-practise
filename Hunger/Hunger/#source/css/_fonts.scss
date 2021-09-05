@@ -1,0 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
+/* Webfont: Banny-Round */
+@font-face {
+	font-family: "Banny";
+	src: url("../fonts/Banny-Round.eot"); /* IE9 Compat Modes */
+	src: url("../fonts/Banny-Round.eot?#iefix") format("embedded-opentype"),
+		/* IE6-IE8 */ url("../fonts/Banny-Round.woff") format("woff"),
+		/* Modern Browsers */ url("../fonts/Banny-Round.ttf") format("truetype"),
+		/* Safari, Android, iOS */ url("../fonts/Banny-Round.svg#Banny-Round") format("svg"); /* Legacy iOS */
+	font-style: normal;
+	font-weight: normal;
+	font-display: swap;
+	text-rendering: optimizeLegibility;
+}
