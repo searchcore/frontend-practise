@@ -39,6 +39,16 @@
 		cursor: pointer;
 		max-height: 17px;
 		margin: 0 20px 10px 0px;
+		& ._en{
+			transition: 0.4s;
+			color: rgb(206, 60, 80);
+		}
+		&._active ._ru{
+			color: rgb(206, 60, 80);
+		}
+		&._active ._en{
+			color: black;
+		}
 		@media (max-width: $bp11) {
 			transform: translateX(0px) rotate(0);
 			position: absolute;
