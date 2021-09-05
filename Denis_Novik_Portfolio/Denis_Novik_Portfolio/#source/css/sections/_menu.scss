@@ -1,0 +1,37 @@
+.menu {
+	max-width: 945px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	margin: 0 auto 32px auto;
+	&-btn {
+		display: none;
+		@media (max-width: $bp9) {
+			display: block;
+		}
+	}
+	&__item {
+		text-align: center;
+		font-family: Gilroy-Bold;
+		font-size: 18px;
+		line-height: 22px;
+		color: #828282;
+		cursor: pointer;
+		transition: 0.2s ease;
+		&:hover {
+			color: #070707;
+		}
+		@media (max-width: $bp9) {
+			margin: 0 0 20px 0;
+			&:last-child {
+				margin: 0;
+			}
+		}
+	}
+	@media (max-width: $bp9) {
+		margin: 0 auto 10px auto;
+		justify-content: flex-start;
+		flex-direction: column;
+	}
+}

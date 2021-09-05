@@ -1,0 +1,17 @@
+.title {
+	font-family: Gilroy-Bold;
+	font-size: 34px;
+	line-height: 42px;
+}
+a {
+	color: inherit;
+}
+.lang {
+	transition: 0.4s;
+}
+.lang-active {
+	color: rgb(206, 60, 80);
+}
+.show-menu {
+	transform: translateX(-50%) translateY(0);
+}

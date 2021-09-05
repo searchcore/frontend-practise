@@ -52,7 +52,7 @@ document.addEventListener("DOMContentLoaded", () => {
 })
 function getLanguageText(lang, callback) {
 	let xhr = new XMLHttpRequest();
-	xhr.open("GET", "./main_text/" + lang + ".txt", true);
+	xhr.open("GET", "./translations/" + lang + ".txt", true);
 	xhr.timeout = 1500;
 	xhr.responseType = "text";
 	xhr.send();

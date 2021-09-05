@@ -1,0 +1,33 @@
+.skills {
+	padding: 90px 0 0 0;
+	&__title {
+		margin: 0 0 70px 0;
+	}
+
+	&__text {
+		margin: 0 0 80px 0;
+	}
+
+	&__row {
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		@media (max-width: $bp3) {
+			flex-wrap: wrap;
+			justify-content: center;
+		}
+		@media (max-width: $bp10) {
+			flex-direction: column;
+			justify-content: space-between;
+		}
+	}
+
+	&__card {
+		@media (max-width: $bp3) {
+			margin: 40px;
+		}
+		@media (max-width: $bp10) {
+			margin: 0 0 80px 0;
+		}
+	}
+}

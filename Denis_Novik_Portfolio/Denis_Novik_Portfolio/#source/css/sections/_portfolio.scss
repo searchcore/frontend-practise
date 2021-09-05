@@ -1,0 +1,18 @@
+.portfolio {
+	padding: 110px 0 100px 0;
+	&__title {
+		margin: 0 0 50px 0;
+	}
+
+	&__card {
+		margin: 0 auto 100px auto;
+		&:last-child {
+			margin: 0 auto;
+		}
+		.card__img {
+			max-width: 937px;
+			width: 100%;
+			margin: 0 auto 45px auto;
+		}
+	}
+}

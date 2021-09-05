@@ -1,0 +1,26 @@
+.card {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	&__img {
+		max-width: 90px;
+		margin: 0 0 24px 0;
+	}
+
+	&__title {
+		margin: 0 0 40px 0;
+	}
+
+	&__rating {
+	}
+
+	&__link {
+		font-family: Gilroy-Medium;
+		font-size: 18px;
+		line-height: 22px;
+		text-align: center;
+		text-decoration-line: underline;
+		color: black;
+	}
+}
